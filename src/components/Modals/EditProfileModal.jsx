@@ -46,7 +46,7 @@ function EditProfileModal() {
         console.log(user);
         setFullName(user.fullName);
         setUsername(user.username);
-        setBio(user.bio);
+        setBio((prev) => prev || user.bio);
         setImageURL(user.profilePicURL);
       }
   }, [user]);
@@ -139,7 +139,7 @@ function EditProfileModal() {
         </label>
         <input
           id="bio"
-          value={bio}
+          value={bio ?? ""}
           onChange={(e) => setBio(e.target.value)}
           className="bg-black w-full p-2 m-2 border-2 border-gray-800 rounded-md outline-none"
         />
