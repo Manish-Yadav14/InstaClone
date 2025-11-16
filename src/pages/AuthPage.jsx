@@ -17,13 +17,13 @@ function AuthPage() {
                     <img className='cursor-pointer h-24' src="/logo.png" alt="Instagram" />
                     {isLogin ? <Login/> : <Signup/>}
 
-                    <div className='flex justify-center items-center'>
+                    {/* <div className='flex justify-center items-center'>
                         <div className='m-2 w-[120px] h-[1px] border'></div>
                         <p>OR</p>
                         <div className='m-2 w-[120px] h-[1px] border'></div>
                     </div>
 
-                    <GoogleAuth prefix={isLogin ? "Log in": "Sign Up"}/>
+                    <GoogleAuth prefix={isLogin ? "Log in": "Sign Up"}/> */}
                 </div>
 
                 <div className='flex flex-col justify-center items-center mt-4 p-4 border-2 w-96'>
